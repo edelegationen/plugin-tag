@@ -106,7 +106,7 @@ class action_plugin_tag extends DokuWiki_Action_Plugin {
                 $pagelist->addPage($page);
             }
 
-            print '<h1>TAG: ' . str_replace('_', ' ', $_REQUEST['tag']) . '</h1>' . DOKU_LF;
+            print '<h1>'. $lang['topic'] . ': ' . str_replace('_', ' ', $_REQUEST['tag']) . '</h1>' . DOKU_LF;
             print '<div class="level1">' . DOKU_LF;
             print $pagelist->finishList();      
             print '</div>' . DOKU_LF;

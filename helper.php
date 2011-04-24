@@ -137,8 +137,9 @@ class helper_plugin_tag extends DokuWiki_Plugin {
                 $class = 'wikilink1';
                 $url   = wl($tag, array('do'=>'showtag', 'tag'=>$svtag));
             }
-            $links[] = '<a href="'.$url.'" class="'.$class.'" title="'.hsc($tag).
-                '" rel="tag">'.hsc($title).'</a>';
+
+            // Remove title attribute (text was confusing)
+            $links[] = '<a href="'.$url.'" class="'.$class.'" rel="tag">'.hsc($title).'</a>';
             $this->references[$tag] = $exists;
         }
 
