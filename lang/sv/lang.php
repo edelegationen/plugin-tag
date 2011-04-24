@@ -9,8 +9,8 @@
 // custom language strings for the plugin
 $lang['tags']  = 'Taggar';
 $lang['topic'] = 'Ämnesord';
-$lang['rebuildindex'] = 'Återskapa Taggindex';
-$lang['toolbar_icon'] = 'Infoga Tag-syntax';
+$lang['rebuildindex'] = 'Återskapa taggindex';
+$lang['toolbar_icon'] = 'Infoga tagg';
 
 $lang['missing_pagelistplugin'] = 'Pagelist-tillägget måste installeras för att kunna visa ämnesförteckningssidor.';
 
