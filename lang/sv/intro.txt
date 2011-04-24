@@ -1,0 +1,13 @@
+====== Taggindexhanterarenr ======
+
+På denna sida kan du återskapa/uppdatera det index som används av [[http://wiki.splitbrain.org/plugin:tag|Tag-plginen]].
+
+Vanligtvis behövs inte detta eftersom indexet uppdateras automatiskt när man taggar sidor. Om du precis uppgraderat eller lagt till ett stort antal sidor kan det vara en bra idé att uppdatera indexet härifrån.
+
+Denna sida kräver en modern webbläsare eftersom den använder javaskript (via [[wp>AJAX]]) för att utföra åtgärder i bakgrunden.
+
+Att uppdatera indexet kan ta lång tid. Lämna sidan öppen i webbläsaren tills det är klart.
+
+
+:!: Ta en backup av ''data/index/tag.idx'' i händelse av att något går fel i uppdateringen. :!:
+
