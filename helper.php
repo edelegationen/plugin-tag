@@ -143,7 +143,7 @@ class helper_plugin_tag extends DokuWiki_Plugin {
             $this->references[$tag] = $exists;
         }
 
-        return implode(','.DOKU_LF.DOKU_TAB, $links);
+        return implode(', '.DOKU_LF, $links);
     }
 
     /**

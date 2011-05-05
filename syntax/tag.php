@@ -63,9 +63,9 @@ class syntax_plugin_tag_tag extends DokuWiki_Syntax_Plugin {
 
         // XHTML output
         if ($mode == 'xhtml') {
-            $renderer->doc .= '<div class="tags"><span>'.DOKU_LF.
+            $renderer->doc .= '<div class="tags">'.DOKU_LF.
                 DOKU_TAB.$tags.DOKU_LF.
-                '</span></div>'.DOKU_LF;
+                '</div>'.DOKU_LF;
             return true;
 
         // for metadata renderer
