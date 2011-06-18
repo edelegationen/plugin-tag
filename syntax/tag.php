@@ -46,6 +46,10 @@ class syntax_plugin_tag_tag extends DokuWiki_Syntax_Plugin {
         global $REV;
 
         $tags = trim(substr($match, 6, -2));     // strip markup & whitespace
+        $tags = str_replace(array("\r", "\r\n", "\n"), " ", $tags);    // strip linbreaks
+        $tags = str_replace("  ", " ", $tags);    // strip double space chars
+        $tags = str_replace("  ", " ", $tags);    // strip double space chars
+
         if (!$tags) return false;
         if (!$my =& plugin_load('helper', 'tag')) return false;
         $tags = $my->_parseTagList($tags); // split tags
